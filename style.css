@@ -1,0 +1,307 @@
+/* #2f3032 */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Inter", sans-serif;
+  color: #2f3032;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 250px auto;
+}
+
+.landing-page {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(./assets/bgimg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  display: flex;
+}
+
+/* Nav */
+.container {
+  width: 80vw;
+  margin: auto;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  background-color: #2f3032;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 10px;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+.pemisah {
+  margin: 0 50px;
+}
+
+nav > ul > li > a {
+  text-decoration: none;
+  color: white;
+}
+
+nav > ul > li > a:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  width: 50px;
+  display: none;
+}
+/* End nav */
+
+/* About */
+.about {
+  padding-top: 60px;
+}
+
+.profil,
+.class,
+.kemampuan {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.class,
+.kemampuan {
+  margin-top: 5rem;
+}
+
+p {
+  text-align: justify;
+}
+
+.foto {
+  width: 200px;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+/* End about */
+
+/* Works */
+.works {
+  padding-top: 60px;
+  text-align: center;
+}
+
+.project {
+  width: 100%;
+  margin-top: 2rem;
+}
+/* End works */
+
+/* Contact */
+.contact {
+  padding-top: 60px;
+  text-align: center;
+}
+
+label > p {
+  margin-top: 1.3rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 3px;
+  font-family: "Inter", sans-serif;
+}
+
+button {
+  margin-top: 1.3rem;
+  width: 100%;
+  padding: 5px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #2f3032;
+  color: white;
+  border-color: #2f3032;
+}
+
+/* Sosmed */
+.hide {
+  display: none;
+}
+
+.socmed {
+  margin-top: 60px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.medsos {
+  width: 45px;
+  margin: 0 10px;
+}
+/* End contact */
+
+/* Footer */
+footer {
+  background-color: #2f3032;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  font-size: 0.8rem;
+  margin-top: 20px;
+}
+
+/* Responsive */
+@media screen and (min-width: 1280px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .container {
+    width: 80vw;
+    margin: auto;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+  }
+
+  .pemisah {
+    margin: 0 40px;
+  }
+
+  .logo {
+    display: block;
+  }
+
+  nav > ul > li > a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: white;
+  }
+
+  .about,
+  .works,
+  .contact {
+    padding-top: 6rem;
+  }
+
+  .profil {
+    margin: 0 auto;
+    width: 60%;
+    font-size: 1.3rem;
+  }
+
+  .kemampuan,
+  .class {
+    display: inline-block;
+    width: 45%;
+    font-size: 1.3rem;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    vertical-align: top;
+  }
+
+  .class {
+    margin-right: 6rem;
+  }
+
+  .imgworks {
+    width: 30%;
+    display: flex;
+  }
+
+  .project {
+    margin-right: 3.15rem;
+  }
+
+  label > p {
+    margin-top: 1.3rem;
+  }
+
+  form {
+    width: 70%;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 3px;
+    font-family: "Inter", sans-serif;
+  }
+
+  button {
+    margin-top: 1.3rem;
+    width: 100%;
+    padding: 5px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+
+  button:hover {
+    background-color: #2f3032;
+    color: white;
+    border-color: #2f3032;
+  }
+
+  .hide {
+    display: inline-block;
+  }
+
+  .socmed {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .link {
+    margin-bottom: 50px;
+    text-align: start;
+    text-decoration: none;
+    color: #2f3032;
+  }
+
+  .medsos {
+    width: 45px;
+    vertical-align: middle;
+  }
+
+  .flex {
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  footer {
+    font-size: 1rem;
+  }
+}
